@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Tutorial GoLang</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+  <div class="nav-fixed">
+    <nav class="nav-extended nav-center blue">
+
+      <div class="nav-wrapper">
+        <a href="../../index.html" class="brand-logo"><i></i> <i class="material-icons">home</i> </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="hide-on-med-and-down">
+          <li><a class="nav-active" href="../../contenido/teoria/teoria.html">¿Qué es?</a></li>
+          <li><a href="../../contenido/practica/practica.html">¡Probarlo!</a></li>
+          <li><a href="../../contenido/practica/mas.html">¡Más!</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="nav-content">
+        <ul class="tabs tabs-transparent blue lighten-1">
+          <!--li.tab(a[href=#tema$])*4-->
+          <li class="tab"><a href="#tema1">Introducción</a></li>
+          <li class="tab"><a href="#tema2">Historia</a></li>
+          <li class="tab"><a href="#tema3">Características</a></li>
+        </ul>
+      </div>
+    
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../../contenido/teoria/teoria.html">¿Qué es?</a></li>
+    <li><a href="../../contenido/practica/practica.html">¡Probarlo!</a></li>
+    <li><a href="../../contenido/practica/mas.html">¡Más!</a></li>
+  </ul>
+
+  <div class="section no-pad-bot" id="index-banner">
+    
+      <br><br>
+
+      <!--div#tema$(div.row(div.col.s6(h3{Tema $}+div{lorem})+div.col.s6(img.responsive-img[src=https://picsum.photos/200/300])))*4 -->
+    <div class="container">
+
+      <div id="tema1">
+        <div class="row">
+          <div class="col s6">
+            <h3>Introducción</h3>
+            <div>
+              <p>
+                Durante muchos años, los desarrolladores han tenido que elegir entre lenguajes de programación de tipado estático compilados, por regla general, bastante complejos pero que proveen grandes características relacionadas con la optimización y el rendimiento y lenguajes de tipado dinámico interpretados con características de mucho más alto nivel que hacían su aprendizaje, uso y sintaxis más sencilla y por tanto divertido programar en ellos, eso sí, sacrificando rendimiento y control.
+              </p>
+              <p>
+                Go mezcla lo mejor de ambos mundos y nos aporta una sintaxis sencilla, clara y divertida junto a la potencia que nos ofrece un lenguaje fuertemente tipado y compilado incorporando además características de alto nivel que facilitan el uso del lenguaje por los desarrolladores.
+              </p>
+            </div>
+          </div>
+          <div class="col s6"><img src="../../img/logo-go.png" alt="" class="responsive-img"></div>
+        </div>
+      </div>
+
+      <div id="tema2">
+        <div class="row">
+          <div class="col s6">
+            <h3>Historia</h3>
+            <div>
+              <p>
+                GoLang o también conocido como Go es un leguaje de todo propósito diseñado para la programación de sistemas. Fue desarrollado en el 2007 por Robert Griesemer, Rob Pike, y Ken Thompson.
+              </p>
+              <p>
+                Go fué originalmente un experimento para desarrollar un lenguaje que resolviera los problemas comunes de la mayoría de los demás lenguajes de programación, manteniendo las características positivas 
+              </p>
+              <p>
+                Por lo tanto, Go está basado en el lenguaje C, mejorando la sintaxis para que sea más concisa y simple además de mejorar la seguridad.
+              </p>
+
+
+              
+              
+              
+
+            </div>
+          </div>
+          <div class="col s6">
+
+            <div class="row valign-wrapper">
+              <div class="col s4"><img src="../../img/griesemer.jpg" alt="" class="responsive-img tooltipped" data-position="bottom" data-tooltip="Robert Griesemer" height="300px"></div>
+              <div class="col s4"><img src="../../img/pike.jpg" alt="" class="responsive-img tooltipped" data-position="bottom" data-tooltip="Rob Pike" height="300px"></div>
+              <div class="col s4"><img src="../../img/thompson.jpg" alt="" class="responsive-img tooltipped" data-position="bottom" data-tooltip="Ken Thompson" height="300px"></div>
+
+
+            </div>
+
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      <div id="tema3">
+        <div class="row">
+          <div class="col s6">
+            <h3>Características</h3>
+            <div>
+              <ul class="collection">
+                <li class="collection-item">
+                  <b>Compilado:</b>
+                  <p> No necesitas instalar ningún programa para que el programa que desarrolles funcione en el sistema operativo para el que lo compilamos.</p>
+                  </li>
+                <li class="collection-item">
+                  <b>Estáticamente Tipado:</b> 
+                  <p>Las variables son tipadas de manera estática, así que si la variable x la definiste como entera, será entera durante todo su alcance.</p>
+                  </li>
+                <li class="collection-item">
+                  <b>Concurrente:</b> 
+                  <p>Está inspirado en CSP (<i>Communicating sequential processes</i> o Comunicación de Procesos Secuenciales — de Charles Anthony Hoare, ganador del premio Turing en 1980).</p>
+                  </li>
+                <li class="collection-item">
+                  <b>Paradigma:</b>
+                  <p> Go admite el paradigma de programación orientada a objetos, pero a diferencia de los lenguajes de programación más populares no dispone de herencia de tipos y tampoco de palabras clave que denotan claramente que soporta este paradigma.</p>
+                  </li>
+                <li class="collection-item">
+                  <b>Uso de paquetes:</b> 
+                  <p>Se usan los paquetes para organizar el código. Un paquete puede tener varios archivos “.go” que permiten definir lo que va a realizar el paquete. Para usar un paquete en tu programa, debes importarlo.</p>
+                  </li>
+              </ul>              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+          <div class="col s6">
+            <div class="row" style="height: 325px">
+              <div class="col s12">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/pGSI1o1K7FU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s2"></div>
+              <div class="col s6">
+                <img src="../../img/hoare.jpg" alt="" class="responsive-img tooltipped" data-position="bottom" data-tooltip="Charles Anthony Hoare">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+           
+    </div>
+      <br><br>
+    
+  </div>
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../../js/materialize.js"></script>
+  <script src="../../js/init.js"></script>
+
+  </body>
+</html>
+
+
